@@ -1,126 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - Sakura Flower Shop</title>
     <style>
-        body  {
-background-image: url("https://mimiandaugust.com/cdn/shop/files/lilacartprintmimiandaugust.png?v=1718210960");
-background-size: cover;
+        body {
+            background-image: url("https://mimiandaugust.com/cdn/shop/files/lilacartprintmimiandaugust.png?v=1718210960");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
 
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h1, h2, h3, h4 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .product-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-item {
+            width: 250px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #fff;
+        }
+
+        .product-item p {
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .product-item h4 {
+            margin: 0;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="Flower.html">Home</a> | 
-        <a href="Collection.html">Collection</a>|
-        <a href="mailto: buiminhkhoa.duong@edu.sait.ca">Contact us</a>|
-        <a href="tel: 123567893">Call us</a>
-    </nav>
-    <h1>Collection</h1>
-    <div>
 
-    <h2> Bouquets</h2>
-        <p> Prefect for birthday, wedding and anniversaries</p>
-        <div class="bouquets">
-            <div class="bouquet-item">
-                <table> 
-                    <tr>
-                        <td style="padding: 45px; background-color: rgb(65, 14, 14); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                            <p>Birthday  </p>
-                        </td>
-                        <td style="padding-left: 20px">
-                            <img width="215"height="315" src="https://i.pinimg.com/736x/94/dc/bf/94dcbfc10ada7729cefa680ce6c024b3.jpg">
-                        </td>
-                    </tr>
-                </table>
-            <div class="bouquet-item">
-                <table> 
-                    <tr>
-                        <td style="padding: 42px; background-color: rgb(65, 14, 14); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                                <p>Wedding </p>    
-                        </td>
-                        <td style="padding-left: 20px">
-                            <img width="215"height="315" src="https://i.pinimg.com/736x/f8/df/79/f8df7990e67d4fe2ed56e5d4be9a574a.jpg">
-                        </td>
-                    </tr>
-                </table>
+    <nav>
+        <a href="Flower.html">Home</a> |
+        <a href="Collection.html">Collection</a> |
+        <a href="mailto:buiminhkhoa.duong@edu.sait.ca">Contact us</a> |
+        <a href="tel:123567893">Call us</a>
+    </nav>
+
+    <h1>Our Collection</h1>
+
+    <!-- Bouquets Section -->
+    <div>
+        <h2>Bouquets</h2>
+        <p>Perfect for birthdays, weddings, and anniversaries</p>
+        <div class="product-category">
+            <div class="product-item">
+                <h4>Birthday</h4>
+                <img src="https://i.pinimg.com/736x/94/dc/bf/94dcbfc10ada7729cefa680ce6c024b3.jpg" alt="Birthday Bouquet">
+                <p>Perfect for celebrating birthdays!</p>
             </div>
-            <div class="bouquet-item">
-                <table> 
-                    <tr>
-                        <td style="padding: 30px; background-color: rgb(65, 14, 14); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                                <p> Anniversary</p>
-                        </td>
-                        <td style="padding-left: 20px">
-                            <img width="215"height="315" src="https://i.pinimg.com/736x/a9/0a/33/a90a33c93d190b57d149498ba6ca1b15.jpg">
-                        
-                        </td>
-                    </tr>
-                </table>
-               
+            <div class="product-item">
+                <h4>Wedding</h4>
+                <img src="https://i.pinimg.com/736x/f8/df/79/f8df7990e67d4fe2ed56e5d4be9a574a.jpg" alt="Wedding Bouquet">
+                <p>Elegant and beautiful for weddings.</p>
+            </div>
+            <div class="product-item">
+                <h4>Anniversary</h4>
+                <img src="https://i.pinimg.com/736x/a9/0a/33/a90a33c93d190b57d149498ba6ca1b15.jpg" alt="Anniversary Bouquet">
+                <p>Celebrate love with our anniversary bouquets.</p>
             </div>
         </div>
     </div>
-   
-    </div>
+
+    <!-- Plants Section -->
     <div>
         <h3>Plants</h3>
-            <div class="Plants-item">
-                <table> 
-                    <tr>
-                        <td style="padding: 52px; background-color:  hsl(125, 59%, 27%); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                            <p>
-                                Indoor
-                                </p>
-                        </td>
-                        <td style="padding-left: 20px">
-                            <img width="215"height="315" src="https://i.pinimg.com/736x/7d/f0/ca/7df0ca890e5125d8ac40503a4249666c.jpg">
-                        
-                        </td>
-                    </tr>
-                </table>
-                <div class="Plants-item">
-                    <table> 
-                        <tr>
-                            <td style="padding: 45px; background-color: hsl(125, 59%, 27%); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                                <p>
-                                    Outdoor
-                                    </p>
-                            </td>
-                            <td style="padding-left: 20px">
-                                <img width="215"height="315" src="https://i.pinimg.com/736x/a7/c2/ed/a7c2ed5aeb91fcd45c5917876b059cac.jpg">
-                            
-                            </td>
-                        </tr>
-                    </table>
+        <div class="product-category">
+            <div class="product-item">
+                <h4>Indoor</h4>
+                <img src="https://i.pinimg.com/736x/7d/f0/ca/7df0ca890e5125d8ac40503a4249666c.jpg" alt="Indoor Plant">
+                <p>Beautiful indoor plants for any home.</p>
+            </div>
+            <div class="product-item">
+                <h4>Outdoor</h4>
+                <img src="https://i.pinimg.com/736x/a7/c2/ed/a7c2ed5aeb91fcd45c5917876b059cac.jpg" alt="Outdoor Plant">
+                <p>Perfect outdoor plants to brighten up your garden.</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Gift Sets Section -->
     <div>
         <h4>Gift Sets</h4>
-        <p>Beautiful flower arrangements paired with chocolate and candles.</p>
-            <div class="Gifts-item">
-                <table> 
-                    <tr>
-                        <td style="padding: 39px; background-color:  hsl(40, 88%, 9%); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                            <p>  Chocolate </p>
-                        </td>
-                        <td style="padding-left: 20px">
-                            <img width="215"height="315" src="https://i.pinimg.com/736x/f0/89/28/f08928a756d9719e28a280bba0f09b6d.jpg">
-                        </td>
-                    </tr>
-                </table>
-             <div class="Gifts-item">
-                    <table> 
-                        <tr>
-                            <td style="padding: 46px; background-color:  hsl(40, 88%, 9%); color: rgb(236, 222, 222); font-size: large;text-shadow: 2px;">
-                                <p>  Candles </p>
-                            </td>
-                            <td style="padding-left: 20px">
-                                <img width="215"height="315" src="https://i.pinimg.com/736x/87/db/6a/87db6a682849aa67a2ab7de315ac544d.jpg">
-                            </td>
-                        </tr>
-                    </table>
-                
+        <p>Beautiful flower arrangements paired with chocolates and candles.</p>
+        <div class="product-category">
+            <div class="product-item">
+                <h4>Chocolate</h4>
+                <img src="https://i.pinimg.com/736x/f0/89/28/f08928a756d9719e28a280bba0f09b6d.jpg" alt="Chocolate Gift Set">
+                <p>Sweet chocolates to accompany your flowers.</p>
+            </div>
+            <div class="product-item">
+                <h4>Candles</h4>
+                <img src="https://i.pinimg.com/736x/87/db/6a/87db6a682849aa67a2ab7de315ac544d.jpg" alt="Candle Gift Set">
+                <p>Set the mood with a beautiful candle.</p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
