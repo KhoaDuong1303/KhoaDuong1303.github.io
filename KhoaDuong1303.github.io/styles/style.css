@@ -63,7 +63,7 @@ h2, h3, h4 {
 }
 
 h1 {
-    color: rgb(177, 84, 177);
+    color: rgb(228, 125, 228);
     font-size: 5em;
 }
 
@@ -186,7 +186,7 @@ nav a:nth-child(4) {
 }
 
 #idname:hover {
-    color: rgb(153, 57, 134);
+    color: rgb(252, 164, 234);
     text-decoration: underline;
     font-size: 1.2em;
 }
