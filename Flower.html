@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Sakura - Home</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./script/script.js"></script>
 </head>
 
 <body class="flower">
@@ -13,14 +14,27 @@
         <a href="tel:123567893">Call us</a>
     </nav>
 
-
     <h1>Sakura Flower Shop</h1>
-
+<button onclick="showFlowerImage()">Show Flower Image</button>
+<button id="changeButton" onclick="changeFlowerImage()" style="display: none;">Change Flower Image</button>
+<img id="flowerImage" src="" alt="Flower Image" width="300" style="display: none; margin: 20px auto;">
+    <button onclick="showMessage()">Special Message</button>
+<button onclick="showShopMessage()">Click Me for a Message</button>
+<p id="shopMessage" style="font-weight: bold; color: #f5adde;"></p>
+<button onclick="countClicks()">Click Counter</button>
+<p id="clickCounterText" style="font-weight: bold; color: #c6638c;"></p>
+    <div id="justDiv" class="title" onmouseover="changeColor()" onmouseleave="resetColor()"
+        style="background-color: rgb(238, 131, 95); padding: 20px; text-align: center; 
+        border-radius: 10px; width: 700px; margin: 20px auto;">
+        Hover over this area to change the color!
+    </div>
+    <button onclick="showMany()">Don't Close Me</button>
+   
     <div id="main" style="background: #faedaa; width: 700px;
         border: 10px solid rgb(255, 255, 255); 
         font-weight: bolder; border-radius: 15px; padding: 15px;
         margin: auto; text-align: center;">
-        <p style="color: rgb(19, 31, 119);">
+        <p style="color: rgb(255, 255, 255);">
             At Sakura, each bouquet is not just a product, but a story of emotion and elegance.
             With a passion for creativity and a commitment to exceptional customer experience,
             we are proud to offer unique collections of fresh flowers to brighten your space and capture unforgettable moments.
@@ -28,6 +42,9 @@
     </div>
 
     <br>
+    <button onclick="welcomeCustomer()">Welcome Message</button>
+    <button onclick="changeColor()">Change color</button>
+
     <p id="idname">Welcome to our floral paradise!</p>
     <p class="classname">Each bouquet is carefully arranged with love and artistry.</p>
 
@@ -57,6 +74,9 @@
             <td style="padding: 8px; border: 1px solid #FF7F50;">8:00 AM - 9:00 PM (Mon-Sat), 9:00 AM - 7:00 PM (Sun)</td>
         </tr>
     </table>
+
+    <footer>
+        <p style="text-align: center; padding: 20px;">© 2024 Sakura Flower Shop. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-
